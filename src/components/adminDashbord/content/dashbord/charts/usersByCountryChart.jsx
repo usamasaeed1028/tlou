@@ -85,7 +85,7 @@ const UsersByCountryChart = () => {
         plugins={[gaugetext]}
         className="my-auto w-2/3"
       />
-      <div className=" w-2/3 flex  flex-wrap items-center justify-center aspect-foughn utChartNewLgend-24/4 mx-auto ">
+      <div className=" w-2/3 flex  flex-wrap items-center justify-center aspect-foughnutChartNewLgend-24/4 mx-auto ">
         {data.labels.map((item, index) => {
           return (
             <div
