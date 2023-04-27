@@ -14,7 +14,7 @@ const Dashbord = () => {
         </div>
 
         {/* users by country && match played charts */}
-        <div className="w-full aspect-banner+usersByCountry&&Mat chPlayedCharts-11/4 flex gap-8 ">
+        <div className="w-full aspect-banner+usersByCountry&&Mat chPlayedCharts-11/4 flex gap-4 2xl:gap-8 ">
           <div
             className="w-1/2 rounded-xl "
             style={{
@@ -46,7 +46,7 @@ const Dashbord = () => {
       </div>
 
       <div
-        className="w-[25vw] 2xl:w-[35.65vw] max-w-[355px] ml-auto rounded-xl  "
+        className="w-[20vw] lg:w-[25vw] 2xl:w-[35.65vw] max-w-[355px] ml-auto rounded-xl  "
         style={{
           background:
             "linear-gradient(97.77deg, rgba(30, 30, 30, 0.69) 1.14%, rgba(30, 30, 30, 0.5) 100%)",
