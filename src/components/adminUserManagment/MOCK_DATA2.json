@@ -1,0 +1,63 @@
+{
+  "id": "Kof9478","image": "http://dummyimage.com/99x75.png/5fa2dd/ffffff","user_name": "Harald Ruggieri","email": "hruggieri0@patch.com","psn_id": "hruggieri0","ip_adress": "82.110.148.36","status":"Active","country": "China",
+
+"ip_addresss": ["234.94.110.200","6.46.23.185","3.26.96.25","115.30.27.49","153.221.96.55","191.88.76.66","16.65.199.161","122.167.2.137","25.77.49.140","188.41.167.34","216.67.211.154","90.96.28.82"],"games": { "total": 1013, "wins": 311, "losses": 702 },"trophies": { "bronz": 76, "silver": 113, "gold": 170 },"socials": {"twitter": "twitter/jhondoe","discord": "discord/jhondoe","youtube": "youtube/jhondoe","twitch": "twitch/jhondoe"},"team": {"name": "~ Team RES ~","id": "560395091","members": {"leader": "Shan Mohammed","co_leader": "Jason Roy",
+"captain": "Ben Stoke",
+"member": "Will Smeed"
+    }
+  },
+  "team_invites": [
+    {
+"team_name": "pez_team",
+"team_id": "8350930",
+"sender": { "name": "meshal brother", "id": "78547722" },
+"date": "1680723363",
+"status": "approved"
+    },
+    {
+"team_name": "pez_team",
+"team_id": "8350930",
+"sender": { "name": "meshal brother", "id": "78547722" },
+"date": "1680723363",
+"status": "approved"
+    },
+    {
+"team_name": "pez_team",
+"team_id": "8350930",
+"sender": { "name": "meshal brother", "id": "78547722" },
+"date": "1680723363",
+"status": "approved"
+    },
+    {
+"team_name": "pez_team",
+"team_id": "8350930",
+"sender": { "name": "meshal brother", "id": "78547722" },
+"date": "1680723363",
+"status": "approved"
+    }
+  ],
+  "penalties": [
+    {
+"type": "cheating",
+"time": "1680723363",
+"points": 50,
+"added_by": "joseph",
+"status": "warning"
+    },
+    {
+"type": "hacking",
+"time": "1680773363",
+"points": 32,
+"added_by": "elizabeth",
+"status": "banned"
+    },
+    {
+"type": "ddosing",
+"time": "1680733363",
+"points": 71,
+"added_by": "elizabeth",
+"status": "banned"
+    }
+  ]
+  
+}
