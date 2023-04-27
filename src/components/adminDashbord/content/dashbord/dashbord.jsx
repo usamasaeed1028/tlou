@@ -6,9 +6,9 @@ import UsersActivity from "./usersActivity";
 
 const Dashbord = () => {
   return (
-    <div className="w-full h-full flex xl:gap-[3.1vw] gap-5 2xl:gap-[45px]">
+    <div className="w-full  h- full flex xl:gap-[3.1vw] gap-5 2xl:gap-[45px]">
       <div
-        className={`h-full w-full max-w- [684px]  flex flex-col  gap-9`}
+        className={`h-f ull w-full max-w- [684px]  flex flex-col  gap-9`}
       >
         {/* hero banner */}
         <div className="w-full relative overflow-hidden">
@@ -48,7 +48,7 @@ const Dashbord = () => {
       </div>
 
       <div
-        className="w-[24.65vw] max-w-[355px] ml-auto rounded-xl  "
+        className="w-[35.65vw] max-w-[355px] ml-auto rounded-xl  "
         style={{
           background:
             "linear-gradient(97.77deg, rgba(30, 30, 30, 0.69) 1.14%, rgba(30, 30, 30, 0.5) 100%)",

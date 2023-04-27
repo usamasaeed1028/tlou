@@ -3,27 +3,26 @@ import AllUsersTable from "./allUsersTable";
 import AllUsersTable2 from "./allUsersTable2";
 import UserDetails from "./userDetails";
 
-
 const AdminUserManagment = () => {
-    const {currentItem}=useUserManagmentInternalState()
-    return ( 
-        <div className=" w-full relative  h-full  rounded-xl">
-    {currentItem=='index'&&    <div className="absolute top-0 left-0 right-0 bottom-0 ">
-
-    <AllUsersTable/>
+  const { currentItem } = useUserManagmentInternalState();
+  return (
+    <div className=" w-full relative  h-full  rounded-xl">
+      {currentItem == "index" && (
+        <div className="absolute top-0 left-0 right-0 bottom-0 ">
+          <AllUsersTable />
         </div>
-    }
+      )}
 
-    {
-        currentItem=='userDetails'&&<div className="w-full h-full min-h-full">
-            <UserDetails/>
+      {currentItem == "userDetails" && (
+        <div className="w-full h-f ull min-h- full">
+          <UserDetails />
         </div>
-    }
-</div> );
-}
- 
+      )}
+    </div>
+  );
+};
+
 export default AdminUserManagment;
-
 
 /* 
  <div className=" w-full relative  h-full ">

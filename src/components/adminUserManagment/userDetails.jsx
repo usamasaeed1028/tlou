@@ -12,7 +12,7 @@ const UserDetails = () => {
   const [section, setSection] = useState("Statistics");
 
   return (
-    <div className="w-full min-h-full lg:gap-4 xl:gap-8  flex">
+    <div className="w-full min-h-f ull lg:gap-4 xl:gap-8  flex">
       <div
         style={{
           background:

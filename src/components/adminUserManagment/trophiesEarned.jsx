@@ -25,7 +25,6 @@ const TrophiesEarned = () => {
           "linear-gradient(97.77deg, rgba(30, 30, 30, 0.69) 1.14%, rgba(30, 30, 30, 0.5) 100%)",
         boxShadow: "inset 0px 0px 3px rgba(255, 255, 255, 0.31)",
         backdropFilter: "backdrop-filter: blur(28.5px)",
-        aspectRatio: 23 / 11,
       }}
       className="w-full flex flex-col gap-9 rounded-xl  pt-6 pb-9 px-8 font-inter font-semibold text-white"
     >
@@ -139,7 +138,7 @@ const Item=({type})=>{
     boxShadow: "inset 0px 0px 3px rgba(255, 255, 255, 0.31)",
     backdropFilter: "blur(28.5px)",
   }}
-  className="flex flex-col justify-between items-center w-1/3 h-full xl:py-6 py-3 rounded-xl"
+  className="flex flex-col justify-between items-center w-1/3 h-[224px] 2xl:h-[260px] xl:py-6 py-3 rounded-xl"
 >
   <div className={`text-base text-center  bg-opacity-20 w-[113px] h-7 rounded-[5px]  ${type=='bronz'?'text-[#EAA86E] bg-[#E9A86E]':type=='silver'?'text-[#ffffff] bg-[#ffffff]':'text-[#fff37e] bg-[#fff37e]'} `}>
   <input
@@ -150,7 +149,7 @@ const Item=({type})=>{
       disabled={!isEditing}
     />
   </div>
-  <span className="relative w-1/2 h-1/2 ">
+  <span className="relative w-[86px] h-[102px] ">
     <Image
       src={type=='bronz'?bronzeTrophy.src:type=='silver'?silverTrophy.src:goldTrophy.src}
       fill

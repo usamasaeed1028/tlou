@@ -14,7 +14,6 @@ const BadgesEarned = () => {
           "linear-gradient(97.77deg, rgba(30, 30, 30, 0.69) 1.14%, rgba(30, 30, 30, 0.5) 100%)",
         boxShadow: "inset 0px 0px 3px rgba(255, 255, 255, 0.31)",
         backdropFilter: "backdrop-filter: blur(28.5px)",
-        aspectRatio: 23 / 11,
       }}
       className="w-full flex flex-col gap-6 rounded-xl  pt-6 pb-9 px-8 font-inter font-semibold text-white"
     >

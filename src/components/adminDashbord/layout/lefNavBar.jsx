@@ -1,15 +1,17 @@
 import Image from "next/image";
 import logo from "../../../../public/logo.png";
+import line from "../../../../public/sidebarLine.png";
 import { useAdminNav } from "@/store/adminNav";
 import { useUserManagmentInternalState } from "@/store/userManagement";
 const LeftNavBar = () => {
-  const { menuIsOpen, toggleMenu, currentItem, setCurrentItem } = useAdminNav();
-  const {setUserManagmentCurrentItem,setIsEditing}=useUserManagmentInternalState()
+  const {  menuIsOpen, toggleMenu, currentItem, setCurrentItem } = useAdminNav();
+  const { setUserManagmentCurrentItem, setIsEditing } =
+    useUserManagmentInternalState();
   return (
-    <div className=" w-full flex flex-col h-full pt-10">
-      <div className="flex  justify-evenly items-center pl-2 ">
+    <div className=" w-full flex flex-col h-screen pt-10 pl-2">
+      <div className="flex  justify-evenly items-center">
         {menuIsOpen && (
-          <div className="mx-auto  relative 2xl:[130px] lg:w-[125px] md:w-[100px] aspect-logo-14/5">
+          <div className="mx-auto relative 2xl:[130px] lg:w-[125px] md:w-[100px] aspect-logo-14/5">
             <Image
               src={logo.src}
               //width={135}
@@ -21,6 +23,7 @@ const LeftNavBar = () => {
             />
           </div>
         )}
+    
         <svg
           onClick={() => {
             toggleMenu();
@@ -45,9 +48,14 @@ const LeftNavBar = () => {
           />
         </svg>
       </div>
+      {menuIsOpen && (
+          <div className="mt-[40px]">
+            <Image src={line} alt="img" />
+          </div>
+        )}
 
       {menuIsOpen && (
-        <div className="mt-[52px] w-full  flex flex-col gap-8">
+        <div className="mt-[52px] w-full  flex flex-col gap-y-[20px]">
           <div
             onClick={() => {
               setCurrentItem("Dashboard");
@@ -76,7 +84,7 @@ const LeftNavBar = () => {
               </svg>
             )}
 
-            <div className="w-full h-full  flex items-center xl:gap-2 gap-1 ">
+            <div className="w-full h-full flex items-center xl:gap-2 gap-1 pl-[10px] ">
               <svg
                 width="24"
                 height="24"
@@ -90,7 +98,7 @@ const LeftNavBar = () => {
                   fill={currentItem == "Dashboard" ? "#FFB53B" : "white"}
                 />
               </svg>
-              <p className="font-medium font-inter leading-[150%] tracking-[0.15px] xl:text-lg lg:text-base text-xs">
+              <p className=" font-inter leading-[150%] tracking-[0.15px] xl:text-lg lg:text-base text-xs">
                 Dashboard
               </p>
             </div>
@@ -99,8 +107,8 @@ const LeftNavBar = () => {
           <div
             onClick={() => {
               setCurrentItem("User Management");
-              setUserManagmentCurrentItem('index');
-              setIsEditing(false)
+              setUserManagmentCurrentItem("index");
+              setIsEditing(false);
             }}
             className={`transition-colors duration-250 ease-in-out w-full  relative hover:cursor-pointer h-[54px]  bg-opacity-20   pl-[10%] md:pl-3 ${
               currentItem == "User Management"
@@ -126,7 +134,7 @@ const LeftNavBar = () => {
               </svg>
             )}
 
-            <div className="w-full h-full flex items-center xl:gap-2 gap-1 ">
+            <div className="w-full h-full flex items-center xl:gap-2 gap-1 pl-[10px] ">
               <svg
                 width="24"
                 height="24"
@@ -149,7 +157,7 @@ const LeftNavBar = () => {
                 />
               </svg>
 
-              <p className="font-medium font-inter leading-[150%] tracking-[0.15px] xl:text-lg lg:text-base text-xs ">
+              <p className=" font-inter leading-[150%] tracking-[0.15px] xl:text-lg lg:text-base text-xs ">
                 User Management
               </p>
             </div>
@@ -157,7 +165,6 @@ const LeftNavBar = () => {
 
           <div
             onClick={() => {
-              
               setCurrentItem("Admin Management");
             }}
             className={`transition-colors duration-250 ease-in-out w-full  relative hover:cursor-pointer h-[54px]  bg-opacity-20  pl-[10%] md:pl-3 ${
@@ -184,7 +191,7 @@ const LeftNavBar = () => {
               </svg>
             )}
 
-            <div className="w-full h-full flex items-center xl:gap-2 gap-1 ">
+            <div className="w-full h-full flex items-center xl:gap-2 gap-1 pl-[10px] ">
               <svg
                 width="24"
                 height="24"
@@ -199,7 +206,7 @@ const LeftNavBar = () => {
                 />
               </svg>
 
-              <p className="font-medium font-inter leading-[150%] tracking-[0.15px] xl:text-[16px] lg:text-sm text-xs">
+              <p className=" font-inter leading-[150%] tracking-[0.15px] xl:text-[16px] lg:text-sm text-xs">
                 Admin Management
               </p>
             </div>
@@ -233,7 +240,7 @@ const LeftNavBar = () => {
               </svg>
             )}
 
-            <div className="w-full h-full flex items-center xl:gap-2 gap-1 ">
+            <div className="w-full h-full flex items-center xl:gap-2 gap-1 pl-[10px] ">
               <svg
                 width="24"
                 height="24"
@@ -248,7 +255,7 @@ const LeftNavBar = () => {
                 />
               </svg>
 
-              <p className="font-medium font-inter leading-[150%] tracking-[0.15px] xl:text-[17px] lg:text-sm text-xs">
+              <p className=" font-inter leading-[150%] tracking-[0.15px] xl:text-[17px] lg:text-sm text-xs">
                 Bans Management
               </p>
             </div>

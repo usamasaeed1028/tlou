@@ -81,20 +81,26 @@ export const data = {
       data: [10, 10, 50, 50, 10, 10, 0, 0, 50, 50, 80, 80],
       borderColor: "rgb(102, 108, 255)",
       backgroundColor: "rgba(102, 108, 255, 1)",
-      borderWidth:3
+      borderWidth: 3,
     },
   ],
 };
 
 export function MatchPlayedChart() {
-    const {menuIsOpen}=useAdminNav()
-    useEffect(()=>{
-    },[menuIsOpen])
+  const { menuIsOpen } = useAdminNav();
+  useEffect(() => {}, [menuIsOpen]);
   return (
     <div className="w-full flex  relative m-auto">
-      <Line options={options} data={data} className="m-auto  xl:w-[70%] lg:w-[68%] w-[65%]   " />
-        <Line options={options} data={data} className='m-auto absolute top-3 left-1 right-0   opacity-10  '/>
-      
+      <Line
+        options={options}
+        data={data}
+        className="m-auto  xl:w -[70%] lg :w-[68%] w-[65%]   "
+      />
+      <Line
+        options={options}
+        data={data}
+        className="m-auto absolute top-3 left-1 right-0   opacity-10  "
+      />
     </div>
   );
 }
